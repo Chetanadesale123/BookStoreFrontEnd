@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html, body{
+    margin: 0px;
+}
+
+.main-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #9d9d9d;
+}
+
+.main-container{
+    width: 47%;
+    display: flex;
+    border-radius: 10px;
+    height: 425px;
+}
+
+.Lpart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    margin: 20px 0px;
+    border: none;
+    border-top-left-radius: 21px;
+    border-bottom-left-radius: 21px;
+    width: 45%;
+    height: auto;
+}
+
+.Lpart p{
+    font-family: "Noto Sans Myanmar UI", arial, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 25px
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 150px;
+    margin-top: 20px;
+}
+
+.Rpart{
+    /* border: 1px solid rgb(215, 212, 212); */
+    border: none;
+    box-shadow: 0px 5px 15px #00000029;
+    border-radius: 6px;
+    width: 55%;
+    height: auto;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    /* position: relative; */
+}
+
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.button a{
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+.header hr{
+    background-color: #A03037;
+    height: 5px;
+    border: none;
+    border-radius: 5px;
+    width: 30px;
+    margin-top: 5px;
+    visibility: hidden;
+}
+
+#register{
+    display: none;
+}
+
+#register form{
+    margin: 0px;
+    width: 100%;
+}
+
+#pwd{
+    position: relative;
+}
+
+#e1 img{
+    width: 25px;
+    height: 25px;
+    margin-top: 5px;
+    position: absolute;
+    right: 10px;
+}
+
+#e1{
+    position: absolute;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+form{
+    margin-top: 20px;
+}
+
+form input{
+    height: 30px;
+    width: 70%;
+    font-size: 20px;
+    border-radius: 3px;
+    border: 1px solid black;
+}
+
+form p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    margin: 20px 60px 0px ;
+    text-align: left;
+}
+
+#register-btn{
+    width: 72%;
+    height: 45px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 25px;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #A03037;
+    color: white;
+}
+
+#log a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 58px;
+    opacity: 0.7;
+}
+
+.hr-text{
+    position: relative;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    max-width: 250px;
+    margin: 30px auto;
+    text-align: center;
+}
+  
+.hr-text:before{
+    content:" ";
+    height: 0.5px;
+    width: 100px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background: linear-gradient(to right, transparent, #888784, transparent);
+    
+}
+  
+.hr-text:after{
+    content:" ";
+    height: 0.5px;
+    width: 100px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    background: linear-gradient(to right, transparent, #888784, transparent);
+    
+}
+
+.loginBy{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+#f1{
+    height: 37px;
+    width: 35%;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #4266B2;
+   
+}
+
+#g1{
+    height: 37px;
+    width: 35%;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #E4E4E4;
+    
+}
