@@ -6,66 +6,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/OrderLogin.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="../script/OrderLogin.js"></script>
-    <title>BookstoreLogin</title>
+    <title>OrderLogin</title>
 </head>
 
 <body>
-    <div class="main-body">
-        <div class="main-container">
-            <div class="Lpart">
-                <img src="../assets/Online_Shopping.png">
-                <p>ONLINE BOOK SHOPPING</p>
+    <div class="bodyContainer">
+        <div class="mainContainer">
+            <div class="logoContainer">
+                <img src="../assets/OnlineShopping.png">
+                <span class="logo-text">ONLINE BOOK SHOPPING</span>
             </div>
-            <div class="Rpart">
-                <div class="header">
-                    <div class="button" id="button">
-                        <a href="#" id="btn1" onclick="Login()">LOGIN</a>
-                        <a href="#" id="btn2" onclick="SignUp()">SIGNUP</a>
-                    </div>
-                    <div>
-                        <hr id="hr">
-                    </div>
+            <div class="signupContainer">
+                <input type="checkbox" id="chkbox">
+                <div class="buttons">
+                    <label for="chkbox" class="login btn"><span>LOGIN</span></label>
+                    <label for="chkbox" class="SignUp btn"><span>SIGNUP</span></label>
                 </div>
-                <div id="log">
-                    <form>
-                        <p>Email Id</p>
-                        <input type="text" id="email">
-                        <p>Password</p>
-                        <input type="password" id="pwd">
-                        <span id="e1" onclick="showInLogin()">
-                            <i id="show-password"><img
-                                    src="../assets/visibility_off_FILL0_wght200_GRAD0_opsz24.svg"></i>
-                        </span>
-                        <a href="#">Forgot Password?</a>
-                        <button type="submit" id="register-btn">Login</button>
-                        <h5 class="hr-text">OR</h5>
-                        <div class="loginBy">
-                            <button id="f1">Facebook</button>
-                            <button id="g1">Google</button>
+                <div class="selectionPill"></div>
+                <div class="loginForm">
+                    <div id="div1">
+                        <label class="inputLable">Email Id</label>
+                        <input type="username" id="LoginEmail" class="beforeinput" class="afterinput"
+                            placeholder="Username123@gmail.com *" required>
+                    </div>
+                    <div id="div2">
+                        <label class="inputLable">Password</label>
+                        <input type="password" id="LoginPassword" class="beforeinput password" class="afterinput"
+                            placeholder="Password *" required>
+                        <div class="iconeye">
+                            <img src="../assets/eyehide.png" onclick="Lshow('LoginPassword');" id="eye1">
                         </div>
-                    </form>
+                    </div>
+                    <a href="../html/ForgotPassword.html" class="loginFormLink">Forgot Password?</a>
+                    <div class="form-btn">
+                        <button id="Login" class="submit-btn">Login</button>
+                    </div>
+                    <div class="footerOR">
+                        <hr>
+                        <span id="OR"> OR </span>
+                        <hr>
+                    </div>
+                    <div class="loginFooter">
+                        <a href="https://www.facebook.com/login/" class="formLink a1">Facebook</a>
+                        <a href="https://accounts.google.com" class="formLink a2">Google</a>
+                    </div>
                 </div>
-                <div id="register">
-                    <form>
-                        <p>Full Name</p>
-                        <input type="text" id="name">
-                        <p>Email Id</p>
-                        <input type="text" id="email">
-                        <p>Password</p>
-                        <input type="password" id="s-pwd">
-                        <span id="e1" onclick="showInSignup()">
-                            <i id="show-password"><img
-                                    src="../assets/visibility_off_FILL0_wght200_GRAD0_opsz24.svg"></i>
-                        </span>
-                        <p>Mobile Number</p>
-                        <input type="text" id="mobile">
-                        <button type="submit" id="register-btn">Signup</button>
-                    </form>
+
+                <div class="signupForm">
+                    <div id="div3">
+                        <label class="inputLable">Full Name</label>
+                        <input type="fname" class="beforeinput" class="afterinput" id="Fname" placeholder="Full Name *">
+                        <span id="nameHint1" class="Errmsg"></span>
+                    </div>
+                    <div id="div4">
+                        <label class="inputLable">Email Id</label>
+                        <input type="username" class="beforeinput" class="afterinput" id="Uname"
+                            placeholder="Username123@gmail.com *">
+                        <span id="UsernameHint" class="form-hint" class="Errmsg"></span>
+                    </div>
+                    <div id="div5">
+                        <label class="inputLable">Password</label>
+                        <input type="password" id="pass" class="beforeinput password" class="afterinput"
+                            placeholder="Password *">
+                        <div class="iconeye">
+                            <img src="../assets/eyehide.png" onclick="Sshow('pass');" id="eye2">
+                        </div>
+                        <span id="passHint" class="form-hint" class="Errmsg"></span>
+                    </div>
+                    <div id="div6">
+                        <label class="inputLable">Mobile No</label>
+                        <input type="text" id="MobileNo" class="beforeinput" class="afterinput"
+                            placeholder="Mobile No *">
+                        <span id="MobHint" class="form-hint" class="Errmsg"></span>
+                    </div>
+                    <button id="Signup" class="submit-btn">Signup</button>
                 </div>
             </div>
         </div>
     </div>
+
 </body>
 
 </html>
